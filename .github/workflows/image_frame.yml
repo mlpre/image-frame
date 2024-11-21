@@ -13,7 +13,7 @@ jobs:
           python-version: "3.13"
       - run: |
           python -m pip install --upgrade pip
-          pip install exifread pyinstaller
+          pip install exifread pillow pyinstaller
       - run: pyinstaller -w -F image_frame.py
       - uses: actions/upload-artifact@v4
         with:
